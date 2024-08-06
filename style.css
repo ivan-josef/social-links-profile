@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --grey_700: hsl(0, 0%, 20%);
+    --grey_800: hsl(0, 0%, 12%);
+    --grey_900: hsl(0, 0%, 8%);
+    --font_size: 14px;
+    --font: "Inter", sans-serif;
+
+}
+
+body{
+    background-color: var(--grey_900);
+    font-family: var(--font);
+
+}
+
+body p{
+    font-size: 14px;
+}
+
+div.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.container__card{
+    height: 600px;
+    width: 400px;
+    background-color: var(--grey_800);
+    border-radius: 8px;
+
+
+}
+
+div.card__avatar{
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.card__avatar img{
+    border-radius: 100%;
+    margin: 33px 0px 20px 0px;
+
+}
+
+div.card__avatar h2{
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.878);
+    font-size: 1.45em;
+
+}
+
+div.card__avatar p#avatar__p1{
+    color: var(--green);
+    margin-bottom: 30px;
+
+
+}
+
+div.card__avatar p#avatar__p2{
+    color: rgba(255, 255, 255, 0.689);
+
+}
+
+div.card__list{
+    height: 60%;
+    margin-top: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+div.card__list a.list__item{
+    text-decoration: none;
+    color: white;
+
+    background-color: var(--grey_700);
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 13px;
+
+}
+
+div.card__list a.list__item:hover{
+    background-color: hsl(0, 0%, 30%);
+
+}
